@@ -1160,7 +1160,7 @@
 			target = $(e.target);
 
 			// Clicked on the switch
-			if (target.hasClass('datepicker-switch')){
+			if (!target.hasClass('datepicker-switch-disabled') && target.hasClass('datepicker-switch')){
 				this.setViewMode(this.viewMode + 1);
 			}
 
